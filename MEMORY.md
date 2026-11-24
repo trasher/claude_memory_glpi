@@ -20,6 +20,4 @@
 - [Checkout GLPI de référence](glpi-checkout-location.md) — utiliser /var/www/webapps/glpi, ~/Workdir/glpi est obsolète
 - [Base de tests GLPI](glpi-test-database.md) — glpi_claude, mise en place de tests/config et install de la suite PHPUnit
 - [Frontend modernization roadmap](frontend-modernization-roadmap.md) — glpiinventory : sortir les vieilles libs JS, migrer Twig puis a11y ; incrément 1 fait
-- [No upstream on new branch](no-upstream-on-new-branch.md) — use `--no-track` when branching from origin/<base>
-- [No co-author in commits](no-coauthor-in-commits.md) — never add Co-Authored-By trailer to commits
 - [No verbose changelog](no-verbose-changelog.md) — don't add CHANGELOG.md entries by default (core team); wait for a reviewer to ask

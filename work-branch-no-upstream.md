@@ -12,4 +12,4 @@ Quand je crée une branche de travail (worktree ou non) à partir d'une branche 
 
 **Why:** Johan l'a demandé explicitement (fix/25929 créé avec suivi automatique de origin/12.0/bugfixes). Un upstream sur la branche de base risque un push ou un pull accidentel vers la mauvaise branche.
 
-**How to apply:** à chaque création de branche à partir de `origin/...`, ajouter `--no-track`. Lié à [[never-push]] et [[glpi-merge-up-flow]].
+**How to apply:** à chaque création de branche à partir de `origin/...`, ajouter `--no-track` (aussi `git switch --no-track -c fix/xxx origin/12.0/bugfixes`). L'upstream ne se pose que plus tard, au push, vers la branche distante du même nom. Lié à [[never-push]] et [[glpi-merge-up-flow]].
