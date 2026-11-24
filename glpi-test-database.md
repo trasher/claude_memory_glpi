@@ -22,6 +22,6 @@ php bin/console database:install -r -f --db-host=localhost --db-name=glpi_claude
     --db-user=glpi --db-password=<mot de passe> --no-interaction --no-telemetry --env=testing
 ```
 
-Échecs pré-existants sans rapport avec le code testé, sur cette machine : les 5 assertions
+Échecs pré-existants sans rapport avec le code testé, sur numaios : les 5 assertions
 de `UserTest::test*PdfFont*` / `testPdffontPreference` (polices PDF absentes) et 2 tests LDAP
 sautés (extension `php-ldap` non installée). Voir [[glpi-checkout-location]].

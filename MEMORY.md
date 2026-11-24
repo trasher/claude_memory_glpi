@@ -17,7 +17,7 @@
 - [Auteur des portages](port-commit-author.md) — portage de PR (rare) : demander qui est l'auteur avant de commiter
 - [pull_request_target → branche par défaut](glpi-pull-request-target-default-branch.md) — workflows PR ciblant la branche par défaut (12.0/bf), pas de remontée
 - [Assets natifs → custom](glpi-native-assets-to-custom.md) — PoC PassiveDCEquipment, décisions, questions ouvertes (API HL, définitions système)
-- [Checkout GLPI de référence](glpi-checkout-location.md) — utiliser /var/www/webapps/glpi, ~/Workdir/glpi est obsolète
+- [Checkout GLPI de référence](glpi-checkout-location.md) — numaios /var/www/webapps/glpi, cronos /var/www/html/private/glpi ; ~/Workdir/glpi est obsolète
 - [Base de tests GLPI](glpi-test-database.md) — glpi_claude, mise en place de tests/config et install de la suite PHPUnit
 - [Frontend modernization roadmap](frontend-modernization-roadmap.md) — glpiinventory : sortir les vieilles libs JS, migrer Twig puis a11y ; incrément 1 fait
 - [No verbose changelog](no-verbose-changelog.md) — don't add CHANGELOG.md entries by default (core team); wait for a reviewer to ask
