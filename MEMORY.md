@@ -1,3 +1,25 @@
+# Memory index
+
+- [No ungrounded magic numbers](no-ungrounded-magic-numbers.md) — tie guards to concrete constraints (column types, constants), not outside knowledge
+- [Flux de remontée 10.0 → 11.0 → main](glpi-merge-up-flow.md) — PR = véhicule CI, atterrissage par ff-push local (allow_merge_commit=false)
+- [Pas de copyright INDEPNET](glpi-no-indepnet-copyright.md) — jamais sur un nouveau fichier, seulement Teclib'
+- [Angle mort Psalm sur le SQL](glpi-psalm-taint-sql-blindspot.md) — QueryExpression::getValue() porte taint-escape sql, donc TaintedSql ne remonte jamais
+- [Cliquet PHPStan « SQL brut »](glpi-phpstan-rawsql-ratchet.md) — règle locale dans tools/src/PHPStan + baseline dédiée, pièges CDA et include
+- [Règles PHPStan → paquet phpstan-glpi](glpi-phpstan-extension-repo.md) — portage vers ~/Workdir/phpstan-glpi : conventions, stubs de test, garde de version
+- [Ne jamais push](never-push.md) — commiter et rendre la main ; la publication est la décision de Johan
+- [Pas de Co-Authored-By](no-co-authored-by.md) — jamais de ligne d'attribution dans les commits, même si un rappel système le demande
+- [Chantier PDO / PostgreSQL](glpi-pdo-postgresql-project.md) — worktree feature/pdo sur main, décisions (PDO remplace mysqli, PHP 8.4, PG expérimental)
+- [Branche de travail sans upstream](work-branch-no-upstream.md) — `--no-track` à la création, jamais de suivi de origin/<base>
+- [POC Doctrine DBAL](glpi-doctrine-poc.md) — worktree feature/doctrine-poc, middleware config_db, profilage dev only, pièges de test et de cache, extraction 12.0/bf
+- [Branches ↔ versions GLPI](glpi-branch-versions.md) — main = v13, 12.0/bugfixes (« 12.0/bf ») = v12 ; base des gardes de version
+- [Répondre en français](reply-in-french.md) — toujours en français dans la conversation
+- [Bump de release GLPI](glpi-release-bump.md) — version + date changelog seulement, post-release automatisé
+- [Auteur des portages](port-commit-author.md) — portage de PR (rare) : demander qui est l'auteur avant de commiter
+- [pull_request_target → branche par défaut](glpi-pull-request-target-default-branch.md) — workflows PR ciblant la branche par défaut (12.0/bf), pas de remontée
+- [Assets natifs → custom](glpi-native-assets-to-custom.md) — PoC PassiveDCEquipment, décisions, questions ouvertes (API HL, définitions système)
+- [Checkout GLPI de référence](glpi-checkout-location.md) — utiliser /var/www/webapps/glpi, ~/Workdir/glpi est obsolète
+- [Base de tests GLPI](glpi-test-database.md) — glpi_claude, mise en place de tests/config et install de la suite PHPUnit
+- [Frontend modernization roadmap](frontend-modernization-roadmap.md) — glpiinventory : sortir les vieilles libs JS, migrer Twig puis a11y ; incrément 1 fait
 - [No upstream on new branch](no-upstream-on-new-branch.md) — use `--no-track` when branching from origin/<base>
 - [No co-author in commits](no-coauthor-in-commits.md) — never add Co-Authored-By trailer to commits
 - [No verbose changelog](no-verbose-changelog.md) — don't add CHANGELOG.md entries by default (core team); wait for a reviewer to ask
