@@ -1,0 +1,3 @@
+- [No upstream on new branch](no-upstream-on-new-branch.md) — use `--no-track` when branching from origin/<base>
+- [No co-author in commits](no-coauthor-in-commits.md) — never add Co-Authored-By trailer to commits
+- [No verbose changelog](no-verbose-changelog.md) — don't add CHANGELOG.md entries by default (core team); wait for a reviewer to ask
