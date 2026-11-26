@@ -25,3 +25,5 @@ php bin/console database:install -r -f --db-host=localhost --db-name=glpi_claude
 Échecs pré-existants sans rapport avec le code testé, sur numaios : les 5 assertions
 de `UserTest::test*PdfFont*` / `testPdffontPreference` (polices PDF absentes) et 2 tests LDAP
 sautés (extension `php-ldap` non installée). Voir [[glpi-checkout-location]].
+
+Sur cronos, `glpi_claude` n'existe pas et l'utilisateur MySQL `glpi` ne peut pas la créer (erreur 1044, constaté le 2026-11-26) : demander une base à Johan plutôt que réinstaller une base partagée avec d'autres worktrees.

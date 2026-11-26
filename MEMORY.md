@@ -21,3 +21,4 @@
 - [Base de tests GLPI](glpi-test-database.md) — glpi_claude, mise en place de tests/config et install de la suite PHPUnit
 - [Frontend modernization roadmap](frontend-modernization-roadmap.md) — glpiinventory : sortir les vieilles libs JS, migrer Twig puis a11y ; incrément 1 fait
 - [No verbose changelog](no-verbose-changelog.md) — don't add CHANGELOG.md entries by default (core team); wait for a reviewer to ask
+- [PoC clé de cache git](glpi-git-cache-key-poc.md) — révision git dans GLPI_FILES_VERSION au lieu du debug forcé (suite PR #26300)
